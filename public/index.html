@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>스크래핑 방어 챌린지</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1>EVERSPIN - 스크래핑 방어 챌린지</h1>
+		<div class="section">
+			<strong>과제:</strong> 스크래핑 기법을 통해 아래 로그인을 <b>자동으로 수행</b>하세요.
+			<ul>
+				<li>계정 ID: admin</li>
+				<li>계정 비밀번호: admin12!</li>
+				<li>계정 수정을 통한 자동 로그인은 무효입니다.</li>
+				<li>주어진 Step1 Login, Step2 Login 외 다른 로그인 요청들을 구현하세요.(Step3, Step4, ...)</li>
+			</ul>
+		</div>
+
+		<!-- Form 방식 -->
+		<form>
+			<label for="username">ID</label>
+			<input type="text" name="username" id="username-input" placeholder="아이디" value="admin" />
+			<br/>
+			<label for="password">PW</label>
+			<input type="password" name="password" id="password-input" placeholder="패스워드" value="admin12!" />
+			<br/>
+			<button type="button" onclick="doStep1();">Step 1</button>
+			<button type="button" onclick="doStep2();">Step 2</button>
+			<button type="button" onclick="doStep3();">Step 3</button>
+			<button type="button" onclick="doStep4();">Step 4</button>
+			<button type="button" onclick="doStep5();">Step 5</button>
+			<button type="button" onclick="doStep6();">Step 6</button>
+			<button type="button" onclick="doStep7();">Step 7</button>
+			<button type="button" onclick="doStep8();">Step 8</button>
+			<button type="button" onclick="doStep9();">Step 9</button>
+			<button type="button" onclick="doStep10();">Step 10</button>
+			<button disabled>...</button>
+			<button type="button" disabled>Step N</button>
+		</form>
+	</div>
+
+	<script src="/js/script.js"></script>
+	<script src="/js/step2-client.js"></script>
+</body>
+
+</html>
