@@ -1,0 +1,6 @@
+flowchart TD
+  A["/step2 요청"] --> B["username, password 추출"]
+  B --> C["zmc__cQss(username), zmc__cQss(password) 복호화"]
+  C --> D{"복호화 중 예외 발생?"}
+  D -- 예 --> E["실패 응답: 스크래핑 탐지"]
+  D -- 아니오 --> F["통과: 복호화된 값 반환"] 

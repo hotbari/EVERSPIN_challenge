@@ -1,0 +1,5 @@
+flowchart TD
+  A["/step1 요청"] --> B["referer, host 헤더 추출"]
+  B --> C{"referer가 없거나<br>referer에 host가 없음?"}
+  C -- 예 --> D["실패 응답: 스크래핑 탐지"]
+  C -- 아니오 --> E["통과: 로그인 처리 진행"] 
